@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test</title>
+    <link rel="Stylesheet" href="./Lab.css">
+</head>
+
+<body>
+    <section>
+        <form>
+            <article id="box">
+                <img src="./Images/Lab-Test/lab-test.jpg" alt="Lab Demo" />
+                <ol id="list">
+                    <li>Your Contact Details</li>
+                    <div>
+                        <input type="text" placeholder="Full Name" required />
+
+                        <input type="text" placeholder="Patient Id if exists" required />
+                    </div>
+                    <div>
+                        <input type="number" placeholder="Contact Number" required />
+
+                        <input type="email" placeholder="Email id" required />
+                    </div>
+                    <li>Address</li>
+                    <div>
+                        <input type="text" placeholder="H-No" required />
+
+                        <input type="text" placeholder="Street" required />
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Area" required />
+                    </div>
+
+                    <div>District</div>
+                    <div>
+                        <select name="District" required>
+                            <option value="">Choose</option>
+                            <option value="Bellandur">Bellandur</option>
+                            <option value="Bannerghatta">Bannerghatta</option>
+                            <option value="HSR">HSR</option>
+                        </select>
+                    </div>
+
+                    <li>Choose the Test Type</li>
+                    <div>(Check atleast one box without fail)</div>
+                    <div>
+                        <input type="checkbox" id="checkbox1" name="option" value="CBC" />
+                        <label for="checkbox1">CBC</label>
+                        <br />
+                        <input type="checkbox" id="checkbox2" name="option" value="Complete Urine" />
+                        <label for="checkbox2">Complete Urine</label>
+                        <br />
+                        <input type="checkbox" id="checkbox3" name="option" value="Lipid Profile" />
+                        <label for="checkbox3">Lipid Profile</label>
+                        <br />
+                        <input type="checkbox" id="checkbox4" name="option" value="Thyroid Stimulating Hormone" />
+                        <label for="checkbox4">Thyroid Stimulating Hormone</label>
+                        <br />
+                        <input type="checkbox" id="checkbox5" name="option" value="Glucose Test" />
+                        <label for="checkbox5">Glucose Test</label>
+                    </div>
+                    <li>Do you want the hard Copy of the <br/> Report also?</li>
+                    <div>
+                        <input type="radio" id="radio1" name="hard_copy" value="Yes" checked />
+                        <label for="radio1">Yes</label>
+
+                        <input type="radio" id="radio2" name="hard_copy" value="No" />
+                        <label for="radio2">No</label>
+                    </div>
+                    <li>Choose your comfortable Date and Time</li>
+                    <div>
+                        <input type="date" required />
+                    </div>
+                    <div>
+                        <input type="time" required />
+                    </div>
+                </ol>
+            </article>
+
+            <article>
+                <div id="button">
+                    <button>Reset</button>
+                    <button>Submit</button>
+                </div>
+            </article>
+
+        </form>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+body {
+    height: auto;
+    margin: 0%;
+}
+
+#box {
+    height: 500px;
+    width: 1000px;
+    border: 1px solid white;
+    box-shadow: 5px 5px 20px gainsboro;
+    margin-top: 50px;
+    margin-left: 200px;
+    overflow-y: auto;
+}
+
+#list li {
+    font-size: 20pt;
+    font-weight: bolder;
+    margin: 15px;
+}
+
+#list div {
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#list div input {
+    font-size: 12pt;
+    font-weight: bold;
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.603);
+    margin: 5px;
+    padding: 5px;
+}
+
+#list div input:focus {
+    outline: none;
+    border-bottom: 2px solid steelblue;
+}
+
+#list div select {
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+}
+
+#list div label {
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+#box img {
+    float: right;
+    width: 430px;
+    height: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0%;
+    z-index: -1;
+    background-size: cover;
+}
+
+#button {
+    margin-top: 35px;
+    margin-left: 550px;
+}
+
+#button button {
+    height: 30px;
+    width: 70px;
+    border: none;
+    background-color: rgb(182, 124, 236);
+    font-size: 12pt;
+    font-weight: bold;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+}

@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    height: auto;
+}
+
+header h1 {
+    height: 50px;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.685);
+    color: white;
+    font-size: xx-large;
+}
+
+#navigate {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+.menu {
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu li {
+    display: inline-block;
+    padding: 5px;
+
+}
+
+.menu li a {
+    color: white;
+    font-size: 16pt;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.menu li:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+}
+
+.menu li:nth-last-child(2):hover .dropdown,
+.menu li:nth-last-child(3):hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    max-width: 150px;
+    background-color: whitesmoke;
+    padding: 5px;
+    margin-top: 6px;
+}
+
+.dropdown li:hover {
+    background-color: gainsboro;
+}
+
+.dropdown li a {
+    color: steelblue;
+    font-size: 16px;
+}
+
+#animation {
+    background-color: rgb(163, 228, 228);
+    border: 2px solid steelblue;
+    margin: 2px;
+    animation-name: animate_images;
+    animation-duration: 35s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+    width: auto;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes animate_images {
+    0% {
+        background-image: url("./Images/Animation/ani1.jpg");
+
+    }
+
+    25% {
+        background-image: url("./Images/Animation/ani2.png");
+
+    }
+
+    50% {
+        background-image: url("./Images/Animation/ani3.jpg");
+
+    }
+
+    75% {
+        background-image: url("./Images/Animation/ani4.jpg");
+
+    }
+
+    100% {
+        background-image: url("./Images/Animation/ani5.jpg");
+    }
+}
+
+section :first-child {
+    font-size: 24pt;
+    font-weight: bolder;
+}
+
+.products {
+    position: relative;
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    border: 1px solid white;
+    padding: 15px;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(243, 243, 253);
+    margin: 5px;
+    box-shadow: 5px 5px 5px gainsboro;
+}
+
+.products p {
+    margin: 0;
+}
+
+.products :first-child {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.products img {
+    height: 150px;
+    width: 245px;
+}
+
+.products :nth-last-child(2),
+.products :nth-last-child(3) {
+    color: rgb(43, 124, 230);
+}
+
+.products button {
+    background-color: lavender;
+    color: orange;
+    width: 249px;
+    height: 30px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-size: 12pt;
+    font-weight: bolder;
+}
+
+.products:hover {
+    height: 260px;
+    width: 260px;
+}
+
+.products button:active {
+    background-color: rgb(250, 234, 230);
+    border: 1px solid rgb(0, 255, 76);
+    border-radius: 5px;
+}
+
+footer {
+    bottom: 0%;
+    padding: 5px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 12pt;
+    height: 50px;
+}
